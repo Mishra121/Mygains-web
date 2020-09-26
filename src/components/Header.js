@@ -3,6 +3,9 @@ import app from "../context/base";
 import { AuthContext } from "../context/AuthState";
 import {Link} from 'react-router-dom';
 
+import logoicon from './images/mygains.png';
+import "./styles/Header.css"
+
 import { makeStyles } from '@material-ui/core/styles';
 // import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -116,7 +119,12 @@ const Header = () => {
     <div className={classes.navDiv}>
     {/* Large Screen Nav */}
     <nav className="d-flex justify-content-between navtop navbar navbar-expand-lg navbar fixed-top">
-      <Link className="navbar-brand" to="/">MyGains</Link>
+      <Link className="navbar-brand" to="/">
+        <img 
+          src={logoicon} alt="MyGains" 
+          style={{width: "150px", height: "45px"}}
+        />
+      </Link>
       <Hidden mdDown>
       <ul className="navbar-nav">
         <li className="nav-item active">
