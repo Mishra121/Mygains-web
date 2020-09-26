@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +24,18 @@ import Shop from './components/Shop';
 import NotFound from './components/NotFound';
 import Blogs from './components/Blogs/Blogs';
 
+const UserDietPlan = React.lazy(() => import('./components/Plans/UserDietPlan'));
+
+function UserDietPlanComp() {
+  return (
+    <>
+      <Suspense fallback={<h4>Loading...</h4>}>
+        <UserDietPlan />
+      </Suspense>
+    </>
+  )
+}
+
 function App() {
   return (
     <AuthProvider>
@@ -38,9 +50,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={SignUp} />
-          <PrivateRoute exact path="/plans" component={Plans} />
+          <Route exact path="/plans" component={Plans} />
           <Route exact path="/shop" component={Shop} />
           <Route exact path="/blogs" component={Blogs} />
+          <PrivateRoute exact path="/user-defined-plan" component={UserDietPlanComp} />
           <Route component={NotFound} />
         </Switch>
         </div>
