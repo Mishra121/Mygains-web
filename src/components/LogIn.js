@@ -1,5 +1,5 @@
 import React, { useCallback, useContext, useEffect } from "react";
-import { withRouter, Redirect } from "react-router";
+import { withRouter, Redirect } from "react-router-dom";
 import app from "../context/base";
 import firebase from "firebase";
 import { AuthContext } from "../context/AuthState";
@@ -20,7 +20,7 @@ const uiConfig = {
   }
 };
 
-const Login = ({ history }) => {
+const Login = ({ history, pathToMove }) => {
 
   const { currentUser, setCurrentUser } = useContext(AuthContext);
 
@@ -43,17 +43,26 @@ const Login = ({ history }) => {
         await app
           .auth()
           .signInWithEmailAndPassword(email.value, password.value);
-        history.push("/plans");
+        if(pathToMove){
+          history.push(`${pathToMove}`);
+        }else{
+          history.push("/plans");
+        }
       } catch (error) {
         alert(error);
       }
     },
-    [history]
+    [history, pathToMove]
   );
 
 
   if (currentUser) {
-    return <Redirect to="/plans" />;
+    if(pathToMove){
+      const url = '' + pathToMove; 
+      return <Redirect to={url} />;
+    }else{
+      return <Redirect to="/plans" />;
+    }
   }
 
   return (
