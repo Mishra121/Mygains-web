@@ -16,7 +16,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
-import LocalMallIcon from '@material-ui/icons/LocalMall';
+// import LocalMallIcon from '@material-ui/icons/LocalMall';
 import LibraryBooksOutlinedIcon from '@material-ui/icons/LibraryBooksOutlined';
 import ExitToAppOutlinedIcon from '@material-ui/icons/ExitToAppOutlined';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
@@ -79,13 +79,9 @@ const Header = () => {
               <ListItemIcon><DescriptionOutlinedIcon></DescriptionOutlinedIcon></ListItemIcon>
               <ListItemText primary={"Plans"}  />
             </ListItem>
-            <ListItem button component={Link} to="/shop">
-              <ListItemIcon><LocalMallIcon></LocalMallIcon></ListItemIcon>
-              <ListItemText primary={"Shop"}  />
-            </ListItem>
             <ListItem button component={Link} to="/blogs">
               <ListItemIcon><LibraryBooksOutlinedIcon></LibraryBooksOutlinedIcon></ListItemIcon>
-              <ListItemText primary={"Stories"}  />
+              <ListItemText primary={"Articles"}  />
             </ListItem>
         </List>
         <Divider></Divider>
@@ -131,10 +127,7 @@ const Header = () => {
           <Link className="nav-link" to="/plans">Plans<span className="sr-only">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/shop">Shop</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/blogs">Stories</Link>
+          <Link className="nav-link" to="/blogs">Articles</Link>
         </li>
         {
           !!currentUser ? (

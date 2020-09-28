@@ -20,7 +20,6 @@ import Footer from './components/Footer';
 import Login from './components/LogIn';
 import SignUp from './components/SignUp';
 import Plans from './components/Plans';
-import Shop from './components/Shop';
 import NotFound from './components/NotFound';
 import Blogs from './components/Blogs/Blogs';
 
@@ -51,7 +50,6 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/plans" component={Plans} />
-          <Route exact path="/shop" component={Shop} />
           <Route exact path="/blogs" component={Blogs} />
           <PrivateRoute exact path="/user-defined-plan" component={UserDietPlanComp} />
           <Route component={NotFound} />
