@@ -32,19 +32,19 @@ export default function WorkPlan() {
     let workOutDetails = [
         {
             s_no: 1,
-            w_image_url: '/images/workout/upperbody.png',
+            w_image_url: 'https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/mygainsimg%2Fupperbody.png?alt=media&token=597a76f4-b035-4bae-8f00-66754323fc96',
             w_text : 'Upper Body Workout',
             w_to: '/pdf/workout/upperbody.pdf'
         },
         {
             s_no: 2,
-            w_image_url: '/images/workout/lowerbody.png',
+            w_image_url: 'https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/mygainsimg%2Flowerbody.png?alt=media&token=2ab2511b-840b-405f-b1b5-060112f66940',
             w_text : 'Lower Body Workout',
             w_to: '/pdf/workout/lowerbody.pdf'
         },
         {
             s_no: 3,
-            w_image_url: '/images/workout/fullbody.png',
+            w_image_url: 'https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/mygainsimg%2Ffullbody.png?alt=media&token=a93a3cf7-addd-4dc3-8b78-a83ee48f459d',
             w_text : 'Full Body Workout',
             w_to: '/pdf/workout/fullbody.pdf'
         }
