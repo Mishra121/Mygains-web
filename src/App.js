@@ -24,12 +24,23 @@ import NotFound from './components/NotFound';
 import Blogs from './components/Blogs/Blogs';
 
 const UserDietPlan = React.lazy(() => import('./components/Plans/UserDietPlan'));
+const BlogById = React.lazy(() => import('./components/Blogs/BlogById'));
 
 function UserDietPlanComp() {
   return (
     <>
       <Suspense fallback={<h4>Loading...</h4>}>
         <UserDietPlan />
+      </Suspense>
+    </>
+  )
+}
+
+function SingleBlog() {
+  return (
+    <>
+      <Suspense fallback={<h4>Loading...</h4>}>
+        <BlogById />
       </Suspense>
     </>
   )
@@ -51,6 +62,7 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/plans" component={Plans} />
           <Route exact path="/blogs" component={Blogs} />
+          <Route exact path="/blogs/:id" component={SingleBlog} />
           <PrivateRoute exact path="/user-defined-plan" component={UserDietPlanComp} />
           <Route component={NotFound} />
         </Switch>
