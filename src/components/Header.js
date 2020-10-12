@@ -131,7 +131,7 @@ const Header = () => {
         </li>
         {
           !!currentUser ? (
-            <li>
+            <li className="nav-item">
               <Button color="inherit" onClick={() => app.auth().signOut()}>Logout</Button>
             </li>
           ):

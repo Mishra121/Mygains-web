@@ -6,6 +6,8 @@ import { AuthContext } from "../context/AuthState";
 
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 
+import "./styles/Login.css"
+
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
   signInFlow: 'popup',
@@ -67,19 +69,25 @@ const Login = ({ history, pathToMove }) => {
 
   return (
     <div>
-      <h1>Log in</h1>
-      <form onSubmit={handleLogin}>
-        <label>
-          Email
-          <input name="email" type="email" placeholder="Email" />
-        </label>
-        <label>
-          Password
-          <input name="password" type="password" placeholder="Password" />
-        </label>
-        <button type="submit">Log in</button>
-      </form>
-      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
+      <div className="login-form">
+      <div className="main-div">
+        <div className="panel">
+          <h2>Log In to Your Account! </h2>
+          <p>Please enter your email and password</p>
+        </div>
+        <form onSubmit={handleLogin} id="Login">
+          <div className="form-group">
+            <input name="email" type="email" className="form-control" id="inputEmail" placeholder="Email Address" />
+          </div>
+          <div className="form-group">
+            <input name="password" type="password" className="form-control" id="inputPassword" placeholder="Password" />
+          </div>
+          <button type="submit" class="btn btn-primary">Log in</button>
+        </form>
+        <h4 style={{textAlign: "center", marginTop: "10px"}} >OR</h4>
+        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
+      </div>
+      </div>
     </div>
   );
 };
