@@ -5,7 +5,7 @@ import WorkPlan from './Plans/WorkPlan'
 export default class Plans extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <DietPlan />
                 <WorkPlan />
             </div>

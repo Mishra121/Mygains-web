@@ -39,7 +39,7 @@ class Blogs extends Component {
         const { classes } = this.props;
 
         return (
-            <div>
+            <div className="container">
                 <div style={{textAlign: "center"}}>
                     <h3 style={{display: "inline"}}>Recent Posts..</h3>
                     {/* <Hidden mdDown>

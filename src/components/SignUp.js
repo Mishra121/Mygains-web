@@ -19,7 +19,7 @@ const SignUp = ({ history }) => {
   }, [history]);
 
   return (
-    <div>
+    <div className="container">
       <div className="signup-form">
       <div className="main-div">
         <div className="panel">

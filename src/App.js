@@ -55,7 +55,6 @@ function App() {
       <GlobalStyles />
       <>
         <Header/>
-        <div className="container">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
@@ -66,7 +65,6 @@ function App() {
           <PrivateRoute exact path="/user-defined-plan" component={UserDietPlanComp} />
           <Route component={NotFound} />
         </Switch>
-        </div>
         <Footer />
       </>
     </MuiThemeProvider>

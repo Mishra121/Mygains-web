@@ -200,6 +200,7 @@ export default function UserDietPlan() {
     }
 
     return (
+        <div className="container">
         <div className="User-Diet-Plan">
 
           {
@@ -237,6 +238,7 @@ export default function UserDietPlan() {
           }
 
 
+        </div>
         </div>
     )
 }

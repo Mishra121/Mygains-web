@@ -140,7 +140,7 @@ class BlogById extends Component {
         // console.log("Id .."+ postIndex)
 
         return (
-            <> 
+            <div className="container"> 
             {
                 (postIndex !== -1) ? (
                     <div className={clsx(classes.containerDiv, 'card')}>
@@ -169,7 +169,7 @@ class BlogById extends Component {
                     <Redirect to="/not-found" />
                 )
             }
-            </>
+            </div>
         )
     }
 }

@@ -68,7 +68,7 @@ const Login = ({ history, pathToMove }) => {
   }
 
   return (
-    <div>
+    <div className="container">
       <div className="login-form">
       <div className="main-div">
         <div className="panel">
