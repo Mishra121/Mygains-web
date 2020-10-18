@@ -56,7 +56,7 @@ class BlogById extends Component {
         const dummyPosts = [
             {
                 post_No: 1,
-                post_image_url: 'https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/Userblogimg%2Fimages%20(23).png?alt=media&token=7f60490a-dfc9-4211-a7b7-63998abf23d5',
+                post_image_url: 'https://ik.imagekit.io/hhv1zj3kjt/images__23__HvMj8LziL.png',
                 post_heading : 'The relationship between physical and mental health',
                 post_body: `
                     Your physical health is linked with your mental health too. Regular exercise helps you
@@ -79,7 +79,7 @@ class BlogById extends Component {
             },
             {
                 post_No: 2,
-                post_image_url: 'https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/Userblogimg%2Fimages%20(24).png?alt=media&token=20d636a7-5e84-4058-8425-9592f657a39a',
+                post_image_url: 'https://ik.imagekit.io/hhv1zj3kjt/images__24__e2TkyCwXo.png',
                 post_heading : 'How to choose diet plans for your goals ?',
                 post_body: `
                     With so many potential diet plans to try, finding the right one for you might seem
@@ -110,7 +110,7 @@ class BlogById extends Component {
             },
             {
                 post_No: 3,
-                post_image_url: 'https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/Userblogimg%2Fimages%20(22).png?alt=media&token=709ad260-c6e6-43c5-8de1-f791b6ac9e84',
+                post_image_url: 'https://ik.imagekit.io/hhv1zj3kjt/images__22__aOZQwVlXS.png',
                 post_heading : 'Story of a woman who became fit by 50',
                 post_body: `
                     When she was 46 years old, she set a goal: to be her absolute fittest by her 50th

@@ -9,7 +9,7 @@ export default class Home extends Component {
 
     render() {
 
-        const Banner = "https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/mygainsimg%2Fchase-kinney-FMQBLyhD2HU-unsplash.jpg?alt=media&token=62709fc5-ebbc-4fdc-afe8-d37bb871395e";
+        const Banner = "https://ik.imagekit.io/hhv1zj3kjt/chase-kinney-FMQBLyhD2HU-unsplash_tjH562pIc.jpg";
 
         return (
             <>
@@ -33,9 +33,9 @@ export default class Home extends Component {
                 </div>    
 
                 <div className="feature-plans">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/mygainsimg%2Fkrisztian-tabori-uHAdwgwxGiY-unsplash.jpg?alt=media&token=238226ce-dae7-4e34-8154-b8ecc169dd5e" alt="" />
+                    <img src="https://ik.imagekit.io/hhv1zj3kjt/krisztian-tabori-uHAdwgwxGiY-unsplash_h6xHKi6lw.jpg" alt="" />
                     <div>
-                        <h2>Meal Plans</h2>
+                        <h2>Meal and Workout Plans</h2>
                         <p>
                             Our  meal plans are designed  to help you lose weight, eat more fiber, go vegan and more. Browse dozens of meal plans to find one that's right for you. Or you can even use the custom meal planner service 
                         </p>
@@ -48,7 +48,7 @@ export default class Home extends Component {
                 </div>
 
                 <div className="feature-plans">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/mygains-india.appspot.com/o/mygainsimg%2Fjess-bailey-ycTvvg1mPU4-unsplash.jpg?alt=media&token=9a1387d8-d3ab-41f1-81d5-a8967f3eb485" alt="" />
+                    <img src="https://ik.imagekit.io/hhv1zj3kjt/northfolk-b_Qt9f2egBM-unsplash_b_jNelM-Q.jpg" alt="" />
                     <div>
                         <h2>Articles and Facts</h2>
                         <p>
