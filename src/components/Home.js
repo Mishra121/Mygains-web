@@ -9,7 +9,7 @@ export default class Home extends Component {
 
     render() {
 
-        const Banner = "https://ik.imagekit.io/hhv1zj3kjt/chase-kinney-FMQBLyhD2HU-unsplash_tjH562pIc.jpg";
+        const Banner = "https://ik.imagekit.io/hhv1zj3kjt/tr:h-400/chase-kinney-FMQBLyhD2HU-unsplash_tjH562pIc.jpg";
 
         return (
             <>
@@ -33,7 +33,7 @@ export default class Home extends Component {
                 </div>    
 
                 <div className="feature-plans">
-                    <img src="https://ik.imagekit.io/hhv1zj3kjt/krisztian-tabori-uHAdwgwxGiY-unsplash_h6xHKi6lw.jpg" alt="" />
+                    <img src="https://ik.imagekit.io/hhv1zj3kjt/tr:w-400,h-300/krisztian-tabori-uHAdwgwxGiY-unsplash_h6xHKi6lw.jpg" alt="" />
                     <div>
                         <h2>Meal and Workout Plans</h2>
                         <p>
@@ -48,7 +48,7 @@ export default class Home extends Component {
                 </div>
 
                 <div className="feature-plans">
-                    <img src="https://ik.imagekit.io/hhv1zj3kjt/northfolk-b_Qt9f2egBM-unsplash_b_jNelM-Q.jpg" alt="" />
+                    <img src="https://ik.imagekit.io/hhv1zj3kjt/tr:w-400,h-300/northfolk-b_Qt9f2egBM-unsplash_b_jNelM-Q.jpg" alt="" />
                     <div>
                         <h2>Articles and Facts</h2>
                         <p>

@@ -17,14 +17,57 @@ import GlobalStyles from "./GlobalStyles";
 import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Login from './components/LogIn';
-import SignUp from './components/SignUp';
-import Plans from './components/Plans';
-import NotFound from './components/NotFound';
 import Blogs from './components/Blogs/Blogs';
+
+// Lazy Loaded components
+const Login = React.lazy(() => import('./components/LogIn'));
+const SignUp = React.lazy(() => import('./components/SignUp'));
+const Plans = React.lazy(() => import('./components/Plans'));
+const NotFound = React.lazy(() => import('./components/NotFound'));
 
 const UserDietPlan = React.lazy(() => import('./components/Plans/UserDietPlan'));
 const BlogById = React.lazy(() => import('./components/Blogs/BlogById'));
+
+function LoginComp() {
+  return (
+    <>
+      <Suspense fallback={<h4>Loading...</h4>}>
+        <Login />
+      </Suspense>
+    </>
+  )
+}
+
+function SignUpComp() {
+  return (
+    <>
+      <Suspense fallback={<h4>Loading...</h4>}>
+        <SignUp />
+      </Suspense>
+    </>
+  )
+}
+
+
+function PlansComp() {
+  return (
+    <>
+      <Suspense fallback={<h4>Loading...</h4>}>
+        <Plans />
+      </Suspense>
+    </>
+  )
+}
+
+function NotFoundComp() {
+  return (
+    <>
+      <Suspense fallback={<h4>Loading...</h4>}>
+        <NotFound />
+      </Suspense>
+    </>
+  )
+}
 
 function UserDietPlanComp() {
   return (
@@ -57,13 +100,13 @@ function App() {
         <Header/>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/signup" component={SignUp} />
-          <Route exact path="/plans" component={Plans} />
+          <Route exact path="/login" component={LoginComp} />
+          <Route exact path="/signup" component={SignUpComp} />
+          <Route exact path="/plans" component={PlansComp} />
           <Route exact path="/blogs" component={Blogs} />
           <Route exact path="/blogs/:id" component={SingleBlog} />
           <PrivateRoute exact path="/user-defined-plan" component={UserDietPlanComp} />
-          <Route component={NotFound} />
+          <Route component={NotFoundComp} />
         </Switch>
         <Footer />
       </>
